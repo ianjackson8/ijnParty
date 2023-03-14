@@ -1,0 +1,60 @@
+<div class="d-flex flex-column center">
+    <i><h2>RSVP</h2></i>
+    <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+        <div class="form-group">
+            <!-- Name -->
+            <div class="row">
+                <h4>Name</h4>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" ngModel required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" id="lastname" name="lastname" ngModel required>
+                </div>
+            </div>
+
+            <!-- Coming/Food? -->
+            <div class="row">
+                <!-- coming -->
+                <div class="col">
+                    <h4>Will you be attending?</h4>
+                    <p>There is an obvious answer</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="coming" id="coming1" value="Yes" ngModel required>
+                        <label class="form-check-label" for="coming1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="coming" id="coming2" value="No" ngModel required>
+                        <label class="form-check-label" for="coming2">No</label>
+                    </div>
+                </div>
+
+                <!-- food -->
+                <div class="col">
+                    <h4>Are you bringing food?</h4>
+                    <p>Don't feel pressured to</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="food" id="food1" value="Yes" ngModel required>
+                        <label class="form-check-label" for="food1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="food" id="food2" value="No" ngModel required>
+                        <label class="form-check-label" for="food2">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- song request? -->
+            <div class="row">
+                <h4>Song Request?</h4>
+                <div class="col-2"></div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Title - Artist" id="song" name="song" ngModel>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">RSVP</button>
+    </form>
+</div>
