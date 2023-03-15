@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { PartyInfoComponent } from './party-info/party-info.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
+import { ConfirmedComponent } from './confirmed/confirmed.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
     HeaderComponent,
     ImageCarouselComponent,
     PartyInfoComponent,
-    RsvpFormComponent
+    RsvpFormComponent,
+    ConfirmedComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,

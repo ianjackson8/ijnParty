@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rsvp-form',
@@ -7,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./rsvp-form.component.css']
 })
 export class RsvpFormComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   onCreatePost(postData: { firstname: string; lastname: string; coming: string; food: string; song: string }) {
     this.http.post('https://ijn-party-default-rtdb.firebaseio.com/rsvp.json', postData).subscribe(responseData => {
       console.log(responseData);
     })
+
+    this.router.navigate(['/confirmed']);
   }
 }
