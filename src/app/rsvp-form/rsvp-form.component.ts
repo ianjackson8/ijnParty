@@ -15,7 +15,7 @@ export class RsvpFormComponent {
 
   }
 
-  onCreatePost(postData: { firstname: string; lastname: string; coming: string; food: string; song: string }) {
+  onCreatePost(postData: { firstname: string; lastname: string; coming: string; food: string; bringFood: string, song: string }) {
     this.http.post<UserID>('https://ijn-party-default-rtdb.firebaseio.com/rsvp.json', postData).subscribe((responseData: UserID) => {
       console.log(responseData);
     })
