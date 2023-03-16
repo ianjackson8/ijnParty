@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ConfirmedComponent } from './confirmed/confirmed.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { ViewAttendiesComponent } from './view-attendies/view-attendies.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,11 @@ const routes: Routes = [
     component: ConfirmedComponent,
     title: "Confirmed!"
   },
+  {
+    path: "view",
+    component: ViewAttendiesComponent,
+    title: "View"
+  }
 ];
 
 @NgModule({

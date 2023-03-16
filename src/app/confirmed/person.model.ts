@@ -4,4 +4,5 @@ export interface Person {
     coming: string; 
     food: string; 
     song: string
+    whatFood: string;
 }

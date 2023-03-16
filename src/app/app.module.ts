@@ -11,6 +11,7 @@ import { PartyInfoComponent } from './party-info/party-info.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { ConfirmedComponent } from './confirmed/confirmed.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { ViewAttendiesComponent } from './view-attendies/view-attendies.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
     PartyInfoComponent,
     RsvpFormComponent,
     ConfirmedComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    ViewAttendiesComponent
   ],
   imports: [
     BrowserModule,
